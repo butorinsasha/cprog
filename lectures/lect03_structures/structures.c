@@ -3,14 +3,12 @@
 int arr[3] = {0, 3, 7};
 int len = sizeof(arr)/sizeof(arr[0]);
 
-typedef struct S {
+typedef struct {
     char c; // 1 Bite
     int i;  // 4 Bite
 } S;
 
 S s = {'A', 1};
-
-
 
 void main()
 {
