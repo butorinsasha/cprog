@@ -10,7 +10,7 @@ typedef struct {
 
 S s = {'A', 1};
 
-void main()
+main()
 {
     for (int i = 0; i < len; ++i)
        {
@@ -21,5 +21,4 @@ void main()
     printf("Size of int: %ld\n", sizeof(int) );
     printf("s.c = %c\n", s.c);
     printf("s.i = %d\n", s.i);
-
 }
