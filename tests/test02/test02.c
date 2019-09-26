@@ -10,11 +10,21 @@ struct S {
     int i;  // 4 Bite
 };
 
-struct S s = {'A', 1};
+struct S s;
 
+
+// s.c = 'B'; // WRONG!
+// s.i = '2'; // WRONG!
+
+struct S ss = {'A', 1};
 
 void main()
 {
+    // s = {'A', 1}; // WORNG
+
+    s.c = 'B';
+    s.i = '2';
+    
     printf("size of short arr[0] = %ld\n", sizeof(arr[0]));
     printf("numb of elem of short arr = %ld\n", sizeof(arr) / sizeof(arr[0]));
     printf("sizeof(short arr) = %ld\n", sizeof(arr));
